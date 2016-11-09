@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app='App'>
+<head>
+	<meta charset="UTF-8">
+	<title>angular</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="form" data-ng-controller='TextCtrl'>
+		<div class="row">
+			<textarea ng-model='message'>{{message}}</textarea>
+		</div>
+		<div class="row">
+			<button ng-click="send()" ng-disabled='!condition()' ng-class='{disabled: !condition()}'>Send</button>
+			<button ng-click="clear()">Clear</button>
+			<span ng-class=' {"warning": switchClass(), "not_valid": valid()}'>Осталось {{remeaning()}}</span>
+		</div>
+	</div>
+	<script src='libs/jquery/dist/jquery.js'></script>
+	<script src='libs/angular/angular.js'></script>
+	<script src='script.js'></script>
+	<script src='controller.js'></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "book",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Denis Kamenski <k.dev@german-web.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.1"
+  }
+}
